@@ -1,0 +1,28 @@
+base.archivesName = 'QiZhangAmbitionFinance'
+
+repositories { mavenCentral() }
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.13.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // Pure ledger tests do not bootstrap Minecraft; use its matching Gson version.
+    testImplementation 'com.google.code.gson:gson:2.14.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') { useJUnitPlatform() }
+
+neoForge {
+    mods {
+        cozylife_economy { sourceSet(sourceSets.main) }
+    }
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+    }
+}
+
+// Public API documentation is intentionally separate from internal implementation.
+tasks.named('javadoc') {
+    include 'qizhang/ambitionfinance/api/**'
+}

@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "qizhang.cozyservices.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "plugin": "qizhang.cozyservices.compat.OptionalWaystonesMixinPlugin",
+  "mixins": [
+    "WaystonesPaidTeleportMixin"
+  ]
+}

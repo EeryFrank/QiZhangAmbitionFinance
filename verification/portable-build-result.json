@@ -1,0 +1,418 @@
+{
+  "schema": 3,
+  "status": "BUILD_37_TESTS_DUAL_API_AND_BOUNDED_LOCAL_RUNTIME_PASS_FORMAL_PENDING",
+  "completed_utc": "2026-10-14T08:02:52.937029+00:00",
+  "minecraft": "26.3",
+  "neoforge": "26.3.0.50-beta",
+  "java": 25,
+  "gradle": "9.2.1",
+  "moddevgradle": "2.0.148",
+  "build_scope": {
+    "latest_core_task": ":finance:build",
+    "latest_addon_task": ":cozylife-integration:assemble",
+    "full_clean_build_was_completed_before_these_bounded_fixes": true,
+    "current_artifacts_are_from_incremental_bounded_fixes": true
+  },
+  "artifacts": [
+    {
+      "path": "finance/build/libs/QiZhangAmbitionFinance-0.1.0-preview.1.jar",
+      "sha256": "f5ca139664603d7ecdacdff2f01ac3e30c41c2d1634868345ca12283a61fb465",
+      "size": 934488
+    },
+    {
+      "path": "finance/build/libs/QiZhangAmbitionFinance-0.1.0-preview.1-sources.jar",
+      "sha256": "74e2bb85b8a37b7a2eea9181aaef5b84d025956de6b59fdabf27af37aac38607",
+      "size": 837143
+    },
+    {
+      "path": "cozylife-integration/build/libs/QiZhangCozyServices-0.1.0-preview.1.jar",
+      "sha256": "a5aa29ef40d0f279a5722cddb5c193b10411c0e9be61161da1c5e29db2049da6",
+      "size": 124129
+    },
+    {
+      "path": "cozylife-integration/build/libs/QiZhangCozyServices-0.1.0-preview.1-sources.jar",
+      "sha256": "208d8a4e20ff50b18ce6b59c5cab15b5aeac013aae53623f3a736102b10cdcd5",
+      "size": 67183
+    }
+  ],
+  "source_sha256": {
+    "finance/src/main/java/cozylife/economy/CoinItem.java": "eb8d93c03eb8d276a207d82f0c5e492cdbf796841ae7a1537f1de9e4f9fa20c2",
+    "finance/src/main/java/cozylife/economy/CozyEconomy.java": "d63cc08cd7ef287a42efe7e91398097893dc50ad53c3a8bbaddb190992daf180",
+    "finance/src/main/java/cozylife/economy/network/CozyNetwork.java": "92e10f141611491946222f4b8f924f3d6fe30597ff37fd5f86e81fdd2b31ec93",
+    "finance/src/main/java/cozylife/economy/network/NavigationExtension.java": "9b6d62ca7283d4a864fd887a6c085a29aed9344ca7f70236b41fe75278baee0b",
+    "finance/src/main/java/cozylife/economy/server/AccountLedger.java": "04f73b767fcd0bb2e5ccfbeaed8e1de456dbfe3015b37bc12a0479030018bd06",
+    "finance/src/main/java/cozylife/economy/server/AdminCoinMail.java": "323205e4638be4390f17a852e2923260631da2969dccf234372c383ceb8e82a3",
+    "finance/src/main/java/cozylife/economy/server/ApiTransactions.java": "e07273d907c50d5a96b0bdc8099d9ef7417d4e103c49d78db5174e847a988a96",
+    "finance/src/main/java/cozylife/economy/server/CheckInOffers.java": "ba2dd6d8459f5ef810fef554898e954ad854f3a8b7335204c6010e7b0b4390e1",
+    "finance/src/main/java/cozylife/economy/server/CheckInRules.java": "637450d6117d759295e1b15c7151ecc747e80c4da8162c5264c243e5e531be1b",
+    "finance/src/main/java/cozylife/economy/server/CoinRewards.java": "daac872c31963d9616cff436cd07d18707bc1d95c01f3cf5c805e2b1fb7bea99",
+    "finance/src/main/java/cozylife/economy/server/EconomyCommands.java": "bfc5d2039eedfbab31bc759e1803dec7713a677848bd8cdd5f58b1a79ad6f848",
+    "finance/src/main/java/cozylife/economy/server/EconomyMetrics.java": "62ce8d4de36bb3410f064701f720203994863ac75dd0bf3e9276c7d54d416b26",
+    "finance/src/main/java/cozylife/economy/server/EconomyService.java": "1a998c0bc1af81776167957fe41575b4bb852d89d333ecc364cfa3ea384c12d8",
+    "finance/src/main/java/cozylife/economy/server/FinancePermissions.java": "2b9480d5ea09a4e401539a40dd88a2e20312adf9e348c0466e693371dd40a1be",
+    "finance/src/main/java/cozylife/economy/server/FinanceProfiles.java": "9d2c3f7b55937ec4c1f5e68c27adb6c5e9b6e96559add4afac07d50c46815794",
+    "finance/src/main/java/cozylife/economy/server/FinanceRules.java": "0a3e17402c39e2cbb41e5366b5db19cd1a2ee3086dde06e172b97449a7380d3c",
+    "finance/src/main/java/cozylife/economy/server/InventoryPlanner.java": "ae75215b9ffb366ab9c8c0de8d0134da6068100969b10463f17c98f852fc0613",
+    "finance/src/main/java/cozylife/economy/server/KnownEconomyPlayers.java": "46b13ecb481f8f62fcae3a0990dcfd3ff2d9049591f64212cff8d49e2df10bd3",
+    "finance/src/main/java/cozylife/economy/server/MarketCatalog.java": "c90e8024474b2a57bf0cb07364dcc835a0500a248d75d28e18647a42e9ced728",
+    "finance/src/main/java/cozylife/economy/server/MarketLedger.java": "b9748bba06c4c9a33b48c284e8bfdbcdf22eff1ffed924a9f4fb489789eb4568",
+    "finance/src/main/java/cozylife/economy/server/MarketPricing.java": "bccc6d6c468979e0caab51b55c3aae869f98410df52890598868db0be9d9cf91",
+    "finance/src/main/java/cozylife/economy/server/MoneyMath.java": "0e7472f44b6bff750601912d091be6c0180f6d0a6537eae59a1366817156c347",
+    "finance/src/main/java/cozylife/economy/server/OfficialPriceBook.java": "20ce7ebb1fca67ca9a49f208fb39205c68f07a8f787edb7d098bde582961dbcd",
+    "finance/src/main/java/cozylife/economy/server/PermissionVisibilityCache.java": "f20020456a57119dcc1b9f20b714e706e1f25c0b3216e9c72603f67ca53a44d3",
+    "finance/src/main/java/cozylife/economy/server/ShopCatalog.java": "87ae7e5ad35cc7bad52a7002a6474fd1a96d3a1c01bdd4280dfad0b62c7f7c53",
+    "finance/src/main/java/cozylife/economy/server/VipMembership.java": "2a377784f78302518b37820647aeb9c33e203378d1df34e7e1a4cbed9f5c02f8",
+    "finance/src/main/java/qizhang/ambitionfinance/api/FinanceApi.java": "779203d230f5c33032ea75d4548804279175822f79f37b5c5c29d63e3544ee08",
+    "finance/src/main/resources/assets/cozylife_economy/items/copper_coin.json": "74564157bb501b59ef9d82ac5c4ca007f4425ea258e7b30a304990b4ad409917",
+    "finance/src/main/resources/assets/cozylife_economy/items/gold_coin.json": "850deed7e74dcd1ac230cf9f12b6a075f46e081e497306272a387a832b2b54c4",
+    "finance/src/main/resources/assets/cozylife_economy/items/silver_coin.json": "aa8ac0e690b20ab4effa50233f6b2c230ec6e359a5834f975d44a4d0b5228d90",
+    "finance/src/main/resources/assets/cozylife_economy/lang/en_us.json": "2eed7d84c59b290f277ff8e256d10273657f9861251b87ade30aa0faabefa40a",
+    "finance/src/main/resources/assets/cozylife_economy/lang/zh_cn.json": "2eed7d84c59b290f277ff8e256d10273657f9861251b87ade30aa0faabefa40a",
+    "finance/src/main/resources/assets/cozylife_economy/models/item/copper_coin.json": "e7af4041c519e78acb3d12e848a323c56c627664f261b8fab89d901e7770e5fd",
+    "finance/src/main/resources/assets/cozylife_economy/models/item/gold_coin.json": "ed426c73512a5cf767f074c78d0de2b5294aa4cb613cac55a91f2eb7a9c85b39",
+    "finance/src/main/resources/assets/cozylife_economy/models/item/silver_coin.json": "865c96af6373f95497228cf40773593031ab9b6d03612f61673914951b6757af",
+    "finance/src/main/resources/assets/cozylife_economy/textures/item/copper_coin.png": "068779718d117063bed47fd767305995efda4e092a90dcb10bdbbbf89cb86a68",
+    "finance/src/main/resources/assets/cozylife_economy/textures/item/gold_coin.png": "d7974cad25cdc4ec26802467b588126919be286fedfbd7664a523bf4a5e50776",
+    "finance/src/main/resources/assets/cozylife_economy/textures/item/silver_coin.png": "dfe1ba4e77ffb5e361dad5d554019b2ed09a02aac4d63d1dcaccc622aa5ef993",
+    "finance/src/main/resources/data/cozylife_economy/QiZhangOfficialPrices.json": "689bf9ed12a03ff3e8dfe5992ae762d5098e386a796e49f859b7739a45ba98ef",
+    "finance/src/main/resources/META-INF/neoforge.mods.toml": "d787edc775cb791ff97fd4c7b35d90e4e28da2fe47bd9e985c5873f5a7616a2f",
+    "finance/src/test/java/cozylife/economy/server/CheckInTest.java": "7434c3455d8ec5dcc8b30089f1a1c6e69078f174b24cd59476316c311e3d852c",
+    "finance/src/test/java/cozylife/economy/server/FinanceCoreTest.java": "2331ce80dffcca56344aa07135a16e62d4168c2f4ddd6884fd9765833a046630",
+    "finance/src/test/java/cozylife/economy/server/PermissionVisibilityCacheTest.java": "0536b5358e5f28ca6bd10b27615e1e7866d9d78a6f61ded7ec07fa383dcf9883",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/client/CozyClientBridge.java": "700da1a5d383e355e526ac4d9d31f0189a97e1e40837fc943fd3ff8167bf5e06",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/client/CozyClientEvents.java": "9abf5178ee8279b60a35f6cd3a50d14442b07b1423dcfa8b4b36ffae6363b630",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/client/CozyMenuScreen.java": "288a9726598049389f2c9078d7fc7565b5844245c173910c4dd64b7c313e7144",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/compat/OptionalWaystonesMixinPlugin.java": "9ac160638347bf4f576bd21ac86ef6a9b3f7fa383f36e6861fc00a852fdf21bf",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/mixin/WaystonesPaidTeleportMixin.java": "bcf27e3cf38575b4157edfbf93be45e8512767cff4b167ba5fb01c53b17364e3",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/QiZhangCozyServices.java": "48ad136bdde91598884807dda2e67472621fd9c396d21dc1c0fd4e2d1675270e",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/server/HomeLoadHolds.java": "686521bf646e3e037d038857edd43d5aaaef705298a8d3518b89866714c1da41",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/server/HomeService.java": "7ad2cc6e7ea88bd8508d9f1cd1f4c4308dbbdf2bee06dc50b387c3b75782574b",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/server/LocalStateFiles.java": "b27f42aa8cc3e879ced4a1d8545570255eb996995fb87c3687193a1c2e038a84",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/server/TeleportRequests.java": "61939c82ff30eb6a54fea1a42e3c333911ca5d1d2c804dc9c8d98b12cfbee696",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/server/TravelFees.java": "7548e90377b662dc8ff99080d4a1edc783f3af0319114ff403be8674eb389025",
+    "cozylife-integration/src/main/java/qizhang/cozyservices/server/WaystonesTravelFees.java": "37ac69c4fc15a8d21e55ced6b9943f07a5fc5d8b07e696411bd64ed072bf1021",
+    "cozylife-integration/src/main/resources/assets/cozylife_economy/lang/en_us.json": "9ce8a5182c9e30432c9f3914935fa51079d2ef75f5ad6abba7de48461b6e1f1d",
+    "cozylife-integration/src/main/resources/assets/cozylife_economy/lang/zh_cn.json": "9ce8a5182c9e30432c9f3914935fa51079d2ef75f5ad6abba7de48461b6e1f1d",
+    "cozylife-integration/src/main/resources/META-INF/neoforge.mods.toml": "d23259afb9639ec4382901a41ef3691ec4776246f925705d82edb7c2fc42dc2c",
+    "cozylife-integration/src/main/resources/mixins.qizhang_travel.json": "cea5b82765af575614f9c604d31c2fb8617be41d0ae37a92d22ce0d13ab629d7",
+    "build.gradle": "36a18ff765fd798d4dd014c8b59c56888f48c0288fa4171abf8fe7fc885fbd96",
+    "settings.gradle": "0e9fad476a038f07c349c264de920205bfca9bb98a21ad7213802fe463677451",
+    "gradle.properties": "7de00fa195f3067420f6c07a464d84633a877d46556b3dd12099a9c0da12a039",
+    "finance/build.gradle": "6da7c418d29254e73f723ee66fc3aa2d2c4ceaf7694ff2a2eaebe6d711044000",
+    "cozylife-integration/build.gradle": "c02f9e789843d8a63be44127d466c72d99b476b2e62bd2e6dc65c741fca3aab3"
+  },
+  "modules": {
+    "finance": {
+      "class_count": 51,
+      "resource_bytes_match_source": 12,
+      "metadata_expanded": true,
+      "no_embedded_dependencies": true,
+      "no_test_classes": true,
+      "sources_jar_exact_java_files": 27
+    },
+    "cozylife-integration": {
+      "class_count": 29,
+      "resource_bytes_match_source": 3,
+      "metadata_expanded": true,
+      "no_embedded_dependencies": true,
+      "no_test_classes": true,
+      "sources_jar_exact_java_files": 12
+    }
+  },
+  "split_classes": [],
+  "tests": {
+    "count": 37,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      "strictDatesLeapYearsAndBeijingBoundary()",
+      "milestoneMailCapacityFailureDoesNotLoseRewardOrCredit()",
+      "fourPurchasesAddTwentyEightDaysAndFourPermanentCredits()",
+      "oneBridgeClaimsSixtyAndHundredTogetherAndNeverRepeats()",
+      "rewardAndBalanceOverflowRefuseWithoutConsumingCredits()",
+      "finalFloorCanEqualTheLargestValidBalance()",
+      "makeupVipMultiplierUsesClaimTimeNotTargetDay()",
+      "quoteConnectionAndOneUseReplayAreStrict()",
+      "quoteRevalidatesAccountConfigExpiryBeijingDayAndVipExpiration()",
+      "legacyAccountsRemainValidAndCheckinConfigurationIsManaged()",
+      "registrationDoesNotUseLastSeenOrOfflineAccountCreation()",
+      "failedVipPurchaseDoesNotDebitOrGrantCredit()",
+      "twentyOneDaysIsInclusiveButOneMillisecondMoreIsRejected()",
+      "bridgingCanUnlockMultipleMilestonesOnlyOnce()",
+      "pendingAbortedCheckinDoesNotIssueRewardOrConsumeCredit()",
+      "verifiableFirstJoinCanMigrateButFutureInvalidValueCannot()",
+      "exactOneMultiplierSupportsVeryLongStreakWithoutAllocatingHugeNumbers()",
+      "todayAndCurrentStreakUsesYesterdayUntilTodayIsClaimed()",
+      "compoundRewardMatchesExactDecimalAndFloorsOnlyAtTheEnd()",
+      "futurePreregistrationDuplicateAndNoCreditAreRejected()",
+      "missedDayUsesAllPriorDaysAndBridgesFollowingDatesWithoutRepricingThem()",
+      "exactFungusExceptionsDoNotAllowOtherWoodMaterials()",
+      "pendingCheckinAndVipRemainExactlyOnceAcrossRestart()",
+      "calendarMarksUnavailableDatesWithoutClaimingThem()",
+      "pendingInventoryReceiptCommitsOnceOrAbortsWithoutMinting()",
+      "aliasesCannotBypassSharedRecycleBaseOrQuota()",
+      "extremeExponentCannotAllocateAnEnormousPlainString()",
+      "coinConversionsAreNotIssueAndAdminMailDoesNotMakePlayerActive()",
+      "independentRecycleKeepsMandatorySpreadAtEveryDiscountAndBoundary()",
+      "batchUsesEachPriceAndSharedMarketAndContinuesAtBounds()",
+      "idempotentCreditAndTransferSurviveRestartAndRejectConflictingRetry()",
+      "discountRulesUseActivitySpecificVipRate()",
+      "switchesAndZeroWeeklyRatioPreservePriceExactly()",
+      "profileThresholdsAndSwitchesDoNotResetAccountsOrMarket()",
+      "missingAndOldConnectionsFailClosedAndPublishedMapsAreImmutable()",
+      "pollingOnlyNotifiesChangedDecisionOrConnection()",
+      "asynchronousReadersOnlyObserveCompletePublishedSnapshots()"
+    ],
+    "suites": [
+      {
+        "name": "cozylife.economy.server.CheckInTest",
+        "tests": "24",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "timestamp": "2026-10-14T07:33:40.762Z",
+        "time": "1.018"
+      },
+      {
+        "name": "cozylife.economy.server.FinanceCoreTest",
+        "tests": "10",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "timestamp": "2026-10-14T07:33:41.792Z",
+        "time": "0.289"
+      },
+      {
+        "name": "cozylife.economy.server.PermissionVisibilityCacheTest",
+        "tests": "3",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "timestamp": "2026-10-14T07:33:42.083Z",
+        "time": "0.016"
+      }
+    ],
+    "report": "finance/build/reports/tests/test/index.html"
+  },
+  "dual_api_compile": [
+    {
+      "module": "finance",
+      "side": "client",
+      "exit_code": 0,
+      "minecraft_api_sha256": "b57a1dda2eeba4e84357a718b981052d55de6d578c6b3f656e52ed837f8c07ad"
+    },
+    {
+      "module": "finance",
+      "side": "server",
+      "exit_code": 0,
+      "minecraft_api_sha256": "b7bed00c74b1303fc42fc8559f9bf701974e78e676a180ddf73bd564b0a585e3"
+    },
+    {
+      "module": "cozylife-integration",
+      "side": "client",
+      "exit_code": 0,
+      "artifact_sha256": "a5aa29ef40d0f279a5722cddb5c193b10411c0e9be61161da1c5e29db2049da6"
+    },
+    {
+      "module": "cozylife-integration",
+      "side": "server",
+      "exit_code": 0,
+      "artifact_sha256": "a5aa29ef40d0f279a5722cddb5c193b10411c0e9be61161da1c5e29db2049da6"
+    }
+  ],
+  "fixes": [
+    "Permission command-tree readers use immutable connection-identity snapshots; actual authorization remains main-thread and live.",
+    "Repair success is not overwritten by expiry from a disabled/empty quote.",
+    "Travel copy states predebit and confirmed-failure refund.",
+    "VIP renewals add seven days only when remaining duration is at most 21 days, with one permanent makeup credit per successful purchase.",
+    "Beijing-date check-in, untruncated compound reward, server-authoritative date tickets, permanent makeup and once-per-threshold silver-coin milestones.",
+    "Calendar marks normal/makeup/unavailable days separately; today confirms once and makeup requires explicit confirmation.",
+    "Seven planting-stock classifications corrected; 43 planting items documented without treating this server profile as a universal database.",
+    "Menu defaults to V; footer and home-tip templates resolve the currently bound translated key rather than a hardcoded grave key."
+  ],
+  "dependency_boundary": "Only public repositories; no old server libraries or private local paths. Core has no Waystones/Balm/Shogi dependency; addon compile-only uses pinned versions plus separately published Shogi API. None are bundled.",
+  "runtime_acceptance": "BOUNDED_CURRENT_LOCAL_RUNTIME_PASS_FORMAL_PENDING",
+  "limits": [
+    "This report records current source/archive correspondence, actual client/Youer API compilation, 37 pure Java tests and separately pinned bounded local runtime evidence.",
+    "The 39-check server regression shares the current core but used addon d157; it is not represented as addon a5 rendering proof. Other runtime stages use the current f5ca/a5 artifacts.",
+    "Historical and current stage counts overlap and are not added. Synthetic history proves algorithm and workflow behavior, not elapsed natural-day operation.",
+    "Formal candidate files are updated, but current-artifact formal startup and production-player acceptance remain PENDING.",
+    "GitHub Actions is configured; no remote CI run or publication is claimed.",
+    "Third-party coin texture rights remain separate from GPL-owned project code."
+  ],
+  "warnings": [
+    "Deprecated CoinItem/client API and LoadingModList.get usage; no compilation errors.",
+    "Some Gradle/ModDevGradle features report Gradle 10 deprecation; wrapper stays pinned to tested 9.2.1."
+  ],
+  "not_current_generated_outputs": [
+    "Existing javadoc JARs were not regenerated by this bounded update and are not listed as current artifacts."
+  ],
+  "historical_local_runtime": {
+    "environment": "Isolated local Minecraft 26.3 Youer server and real game client; no public-server player transactions",
+    "final_core_sha256": "c0eb4e8b87e15df2a662e6e6f132097f8749a6832a0a3da140a48e8982544f89",
+    "final_addon_sha256": "7f1f55f9c4b1f5a3c90571e2acc7db6da0eb3ca60d2463aa0db739a524495426",
+    "stages": [
+      {
+        "stage": "historical_earlier_functional_stage",
+        "scope_zh": "旧账户副本迁移、经济/API/配置和预扣退款回归",
+        "checks": 43,
+        "passed": 43,
+        "source_report": "finance-runtime-migrated-predebit-v1/report.json",
+        "source_sha256": "de0c78c8ebcbf9f7f89688b6938d48a9e3e014f8421d3b5f06e1efb4045c2cb4",
+        "raw_report_published": false,
+        "production_player_tested": false,
+        "core_sha256": "ee922e28b8eb411961688eacd5791539f9507b235219d40084c4f44d6acdfb8f",
+        "addon_sha256": null,
+        "artifact_boundary": "Earlier source report pins core only; addon identity is not reconstructed."
+      },
+      {
+        "stage": "historical_earlier_functional_stage",
+        "scope_zh": "回家余额不足/成功扣费、Waystones经验和保存名称检查",
+        "checks": 11,
+        "passed": 11,
+        "source_report": "finance-home-waystones-ui-finish/report.json",
+        "source_sha256": "2fee37dfdafea3117019839e0f1dfb9242257901608217516ae11b7b011fa4cf",
+        "raw_report_published": false,
+        "production_player_tested": false,
+        "core_sha256": "ee922e28b8eb411961688eacd5791539f9507b235219d40084c4f44d6acdfb8f",
+        "addon_sha256": null,
+        "artifact_boundary": "Earlier source report pins core only; addon identity is not reconstructed."
+      },
+      {
+        "stage": "historical_final_candidate",
+        "scope_zh": "正常重启持久化和已完成请求幂等重放",
+        "checks": 20,
+        "passed": 20,
+        "source_report": "finance-permissions-restart-v2/report.json",
+        "source_sha256": "09ffd67585e77c290b2b6793b58982bc15678ace82fb71576d4d6d04fde0b7a5",
+        "raw_report_published": false,
+        "production_player_tested": false,
+        "core_sha256": "c0eb4e8b87e15df2a662e6e6f132097f8749a6832a0a3da140a48e8982544f89",
+        "addon_sha256": "7f1f55f9c4b1f5a3c90571e2acc7db6da0eb3ca60d2463aa0db739a524495426",
+        "artifact_boundary": "Previous final pre-checkin candidate; not current check-in build."
+      },
+      {
+        "stage": "historical_final_candidate",
+        "scope_zh": "真实客户端登录及OP/deop命令树刷新，账本保持",
+        "checks": 9,
+        "passed": 9,
+        "source_report": "finance-permissions-op-cycle-v1/report.json",
+        "source_sha256": "33d29fddb994bf73bd77193d0b9eed261ae398b609375a9acd96aeb1168fe17f",
+        "raw_report_published": false,
+        "production_player_tested": false,
+        "core_sha256": "c0eb4e8b87e15df2a662e6e6f132097f8749a6832a0a3da140a48e8982544f89",
+        "addon_sha256": "7f1f55f9c4b1f5a3c90571e2acc7db6da0eb3ca60d2463aa0db739a524495426",
+        "artifact_boundary": "Previous final pre-checkin candidate; not current check-in build."
+      }
+    ],
+    "counts_are_not_added": true,
+    "count_boundary": "Stages overlap; earlier functional checks are not claimed to have all rerun on every subsequent build.",
+    "raw_player_identifiers_paths_balances_and_logs_omitted": true,
+    "not_verified": [
+      "Production-player transactions",
+      "Minimum-spec FPS",
+      "Long-running multiplayer load",
+      "Complete two-player TPA flow",
+      "Every production chain",
+      "Other Minecraft versions or loaders"
+    ],
+    "status": "HISTORICAL_PRE_CHECKIN_BUILDS_ONLY_NOT_CURRENT_RUNTIME_PROOF"
+  },
+  "current_local_runtime": {
+    "status": "PASS_BOUNDED_CURRENT_ARTIFACTS",
+    "core_sha256": "f5ca139664603d7ecdacdff2f01ac3e30c41c2d1634868345ca12283a61fb465",
+    "addon_sha256": "a5aa29ef40d0f279a5722cddb5c193b10411c0e9be61161da1c5e29db2049da6",
+    "environment": "Isolated local Minecraft 26.3 Youer server with a real client; synthetic historical dates where explicitly stated.",
+    "stages": [
+      {
+        "stage": "earlier_addon_current_core_server_regression",
+        "status": "PASS_BOUNDED",
+        "checks": 39,
+        "passed": 39,
+        "core_sha256": "f5ca139664603d7ecdacdff2f01ac3e30c41c2d1634868345ca12283a61fb465",
+        "addon_sha256": "d157b56b6dfc528a7f229a32bac035ceb229ac8fe2ed7120395e940d917cab5c",
+        "scope_zh": "服务端签到、VIP 续期上限、永久补签、日期与报价防重、取消及种源目录合并保留账户和市场。",
+        "artifact_boundary": "Same current core with earlier addon d157; these checks are not current a5 rendering evidence.",
+        "source_report": "checkin-live-r02/report.json",
+        "source_sha256": "c8f2079f1496453fb7b9d77a7fbf9636a2b7dfdbe71bbae9445530dc96936633",
+        "raw_report_published": false,
+        "production_player_tested": false
+      },
+      {
+        "stage": "current_addon_actual_makeup_settlement",
+        "status": "PASS_BOUNDED",
+        "checks": 14,
+        "passed": 14,
+        "core_sha256": "f5ca139664603d7ecdacdff2f01ac3e30c41c2d1634868345ca12283a61fb465",
+        "addon_sha256": "a5aa29ef40d0f279a5722cddb5c193b10411c0e9be61161da1c5e29db2049da6",
+        "scope_zh": "真实界面确认后的唯一补签结算、连续段连接、一次性里程碑银币及旧签到记录保留；取消操作由根任务界面流程另行核对。",
+        "artifact_boundary": "Current a5 GUI evidence is paired with a5-pinned keybinding audit; raw account contents are not published.",
+        "source_report": "final-ui-checkin-independent-r04/report.json",
+        "source_sha256": "201ffdb6f1556dd9263e4e0e0fef235646b622266d37f05821c1625a186e0e0d",
+        "raw_report_published": false,
+        "production_player_tested": false
+      },
+      {
+        "stage": "current_normal_restart_online_readback",
+        "status": "PASS_BOUNDED",
+        "checks": 7,
+        "passed": 7,
+        "core_sha256": "f5ca139664603d7ecdacdff2f01ac3e30c41c2d1634868345ca12283a61fb465",
+        "addon_sha256": "a5aa29ef40d0f279a5722cddb5c193b10411c0e9be61161da1c5e29db2049da6",
+        "scope_zh": "正常关闭并重启后在线读取，账户、VIP、邮件、回收用量和签到持久化；已签日期与里程碑无重复结算。",
+        "artifact_boundary": "Current f5ca/a5 artifacts; ordinary restart only, not crash recovery.",
+        "source_report": "final-restart-r05/report.json",
+        "source_sha256": "afd3b74cfd7046ec6871943f795b55dbf02499c72eea993adf3ef9e244d53a9f",
+        "raw_report_published": false,
+        "production_player_tested": false
+      },
+      {
+        "stage": "current_V_menu_gui",
+        "status": "PASS_BOUNDED",
+        "checks": 1,
+        "passed": 1,
+        "core_sha256": "f5ca139664603d7ecdacdff2f01ac3e30c41c2d1634868345ca12283a61fb465",
+        "addon_sha256": "a5aa29ef40d0f279a5722cddb5c193b10411c0e9be61161da1c5e29db2049da6",
+        "scope_zh": "真实客户端 V 菜单及当前 V 绑定提示可见，核对界面截图与根任务操作记录。",
+        "artifact_boundary": "Only V_MENU_DYNAMIC_HINT is attributed to this project; four unrelated-mod keybinding checks are excluded. Arbitrary rebound keys were not exercised.",
+        "source_report": "keybinding-audit/runtime-r04-review.json",
+        "source_sha256": "c14450b2dad3c6522b9c61c1f50bcb08bc7ec2851629fc6374e9a8d6a2106bf5",
+        "raw_report_published": false,
+        "production_player_tested": false
+      }
+    ],
+    "counts_are_not_added": true,
+    "current_addon_scope": "Actual V menu, makeup calendar confirmation/cancel workflow, exactly-once settlement and normal restart readback. The 39-check server regression used the earlier addon, as separately pinned.",
+    "raw_player_identifiers_paths_balances_and_logs_omitted": true,
+    "not_verified": [
+      "Formal server startup using these updated files and production-player transactions",
+      "Arbitrary other rebound-key display combinations",
+      "Elapsed natural-day or long-term check-in operation; historical dates were synthetic",
+      "Crash or power-loss recovery",
+      "Minimum-spec FPS and long-running multiplayer load",
+      "Complete two-player TPA flow",
+      "Every production chain or other Minecraft versions/loaders"
+    ]
+  },
+  "latest_bounded_addon_update": {
+    "status": "BUILD_DUAL_API_AND_BOUNDED_V_MENU_GUI_PASS",
+    "default_menu_key": "V",
+    "dynamic_binding_hint": true,
+    "changed_files": 4,
+    "calendar_financial_logic_changed": false,
+    "core_sha256_unchanged": "f5ca139664603d7ecdacdff2f01ac3e30c41c2d1634868345ca12283a61fb465",
+    "private_build_report_sha256": "03e363547525d6ad394c7de37f3ded8527ed7975855e80904d3b24ef2de4b1cb",
+    "raw_local_paths_omitted": true,
+    "private_runtime_report_sha256": "c14450b2dad3c6522b9c61c1f50bcb08bc7ec2851629fc6374e9a8d6a2106bf5",
+    "runtime_boundary": "Default V menu and its actual V hint were observed; arbitrary user remappings remain untested."
+  },
+  "runtime_summary_updated_utc": "2026-10-14T09:07:53.347006+00:00",
+  "formal_runtime": {
+    "status": "PENDING",
+    "candidate_files_updated": true,
+    "started_with_current_artifacts": false,
+    "production_player_tested": false,
+    "scope": "Candidate file deployment is complete; formal startup and player acceptance remain separate."
+  }
+}

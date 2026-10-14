@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[12,)"
+license="GPL-3.0-only"
+[[mods]]
+modId="cozylife_economy"
+version="${mod_version}"
+displayName="QiZhangAmbitionFinance · 七章的野心金融"
+description='''服务器权威货币、铜银金币、动态商店、独立回收基准、官方估价与开发者接口。保留既有币 ID 和财务存档。菜单和出行由可选 QiZhangCozyServices 提供。'''
+[[dependencies.cozylife_economy]]
+modId="minecraft"
+type="required"
+versionRange="[26.3]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.cozylife_economy]]
+modId="neoforge"
+type="required"
+versionRange="[26.3.0.50-beta,26.4)"
+ordering="NONE"
+side="BOTH"

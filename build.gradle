@@ -1,0 +1,68 @@
+plugins {
+    id 'base'
+    id 'net.neoforged.moddev' version '2.0.148' apply false
+}
+
+allprojects {
+    group = 'qizhang.ambitionfinance'
+    version = providers.gradleProperty('mod_version').get()
+}
+
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'net.neoforged.moddev'
+
+    java {
+        toolchain.languageVersion = JavaLanguageVersion.of(25)
+        withSourcesJar()
+        withJavadocJar()
+    }
+
+    neoForge {
+        enable {
+            version = providers.gradleProperty('neo_version').get()
+            // Avoid decompilation/recompilation and its large memory cost.
+            disableRecompilation = true
+        }
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+        options.release = 25
+    }
+    tasks.withType(Javadoc).configureEach {
+        options.encoding = 'UTF-8'
+        options.charSet = 'UTF-8'
+        options.addBooleanOption('Xdoclint:all,-missing', true)
+        options.addBooleanOption('notimestamp', true)
+    }
+    tasks.withType(AbstractArchiveTask).configureEach {
+        preserveFileTimestamps = false
+        reproducibleFileOrder = true
+    }
+    tasks.withType(Jar).configureEach {
+        from(rootProject.file('LICENSE'))
+        manifest.attributes('Implementation-Version': project.version,
+                            'Implementation-Vendor': 'EeryFrank')
+    }
+    tasks.named('processResources') {
+        inputs.properties(mod_version: project.version,
+                          minecraft_version: providers.gradleProperty('minecraft_version').get(),
+                          neo_version: providers.gradleProperty('neo_version').get())
+        filesMatching('META-INF/neoforge.mods.toml') {
+            expand(mod_version: project.version,
+                   minecraft_version: providers.gradleProperty('minecraft_version').get(),
+                   neo_version: providers.gradleProperty('neo_version').get())
+        }
+    }
+}
+
+tasks.named('build') { dependsOn subprojects.collect { it.tasks.named('build') } }
+tasks.named('assemble') { dependsOn subprojects.collect { it.tasks.named('assemble') } }
+tasks.named('clean') { dependsOn subprojects.collect { it.tasks.named('clean') } }
+tasks.named('check') { dependsOn subprojects.collect { it.tasks.named('check') } }
+
+tasks.named('wrapper', Wrapper) {
+    gradleVersion = '9.2.1'
+    distributionType = Wrapper.DistributionType.BIN
+}

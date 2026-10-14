@@ -1,0 +1,7 @@
+{
+  "item.cozylife_economy.copper_coin": "铜币",
+  "item.cozylife_economy.silver_coin": "银币",
+  "item.cozylife_economy.gold_coin": "金币",
+  "item.cozylife_economy.coin.value": "每枚可存入 %s 点余额",
+  "item.cozylife_economy.coin.use": "手持右键，将整叠钱币存入自己的钱包"
+}

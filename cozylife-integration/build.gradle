@@ -1,0 +1,38 @@
+base.archivesName = 'QiZhangCozyServices'
+
+repositories {
+    exclusiveContent {
+        forRepository { maven { name = 'TwelveIterations'; url = 'https://maven.twelveiterations.com/repository/maven-public/' } }
+        filter { includeModule 'net.blay09.mods', 'shogi-api' }
+    }
+    exclusiveContent {
+        forRepository { maven { name = 'Modrinth'; url = 'https://api.modrinth.com/maven' } }
+        filter { includeGroup 'maven.modrinth' }
+    }
+}
+
+dependencies {
+    implementation project(':finance')
+    compileOnly "maven.modrinth:waystones:${waystones_version}"
+    compileOnly "maven.modrinth:balm:${balm_version}"
+    compileOnly "maven.modrinth:shogi:${shogi_version}"
+    // The mod ships this API as a nested JAR, which javac cannot see directly.
+    compileOnly 'net.blay09.mods:shogi-api:26.3.0.3'
+    // Opt-in developer runs; compile-only dependencies are not shaded or bundled.
+    if (providers.gradleProperty('withWaystones').map { it.toBoolean() }.getOrElse(false)) {
+        runtimeOnly "maven.modrinth:waystones:${waystones_version}"
+        runtimeOnly "maven.modrinth:balm:${balm_version}"
+        runtimeOnly "maven.modrinth:shogi:${shogi_version}"
+    }
+}
+
+neoForge {
+    mods {
+        cozylife_economy { sourceSet(project(':finance').sourceSets.main) }
+        qizhang_cozy_services { sourceSet(sourceSets.main) }
+    }
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+    }
+}

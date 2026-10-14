@@ -1,0 +1,5 @@
+# Preserve reviewed source bytes and the hashes in release manifests.
+* -text
+*.jar binary
+*.png binary
+*.sqlite binary

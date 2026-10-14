@@ -1,0 +1,235 @@
+{
+  "status": "PASS_GENERATED_REFERENCE_DATABASE_DATA_QA",
+  "check_count": 41,
+  "checks": [
+    {
+      "name": "已正常退出的真实导出无错误",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "精确覆盖全部7246真实注册ID，无QA添加物品",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "全部8376真实配方与802标签快照",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "schema及稳定revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "资源JSON逐字相同",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "官方51项原始买价全部保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "默认不自动上架、不自动开放回收",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "整型价格安全边界",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "独立回收价和默认回收价完全一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "非技术普通物品正回收参考且严格小于买价",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "稀有、技术、禁售和低可信默认日回收为0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "技术/服主禁售/低可信均不允许自动核价",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "技术标志与服主禁售均为独立布尔字段",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "全部中文名称、来源、限制可读且无待译名",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "没有冒充全量人工审价",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "用户允许加工套利的政策明确保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "正确分类集合",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "矿锭全部禁售",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "真实存储压缩块标签全部禁售",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "禁售示例与可售原木分离",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "组件与创造技术品不能按ID售卖",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "可靠配方装备可核价并用于修理",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "未知价至少多维分层，不是统一兜底数字",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "每条选定配方的批量/概率/槽位和计算可复核",
+      "passed": true,
+      "detail": {
+        "selected": 6041,
+        "loaded": 5987,
+        "batch_outputs": 2716,
+        "probability": 0
+      }
+    },
+    {
+      "name": "AE2压印模具按1024次摊销并保留复用证据",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "农夫锅菜容器成本存在",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "真实木板一次产出4的参考量保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "普通铁剑只需材料成本且装备非统一高价",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "鱼获按维度/稀有权重区别定价",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SQLite完整性通过",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SQLite与JSON全部7246项完整字段一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SQLite独立字段与record_json一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SQLite保留全8376条配方摘要和原始SHA，不重分发完整配方",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SQLite元数据与JSON一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "中文CSV行数/买价/回收价/禁售标志一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "发布数据和生成器不含本机绝对路径/玩家/服务器地址",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "没有自然锚点的循环不能凭空产生低价",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "有锚点循环不能把既有锚点稀释",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "未知组件输入不扩大成普通ID匹配",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "差集标签实际排除项不参与低价选择",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "未知物品保持低可信且分维度高参考价",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "revision": "20261014.f971913cd3d67e274e5e",
+  "registered_items": 7246,
+  "eligible": 3758,
+  "owner_excluded": 2667,
+  "technical": 240,
+  "confidence": {
+    "medium": 6359,
+    "low": 836,
+    "high": 51
+  },
+  "full_human_appraisal": false,
+  "production_runtime_test": false,
+  "production_modified": false,
+  "files": {
+    "QiZhangOfficialPrices.json": "689bf9ed12a03ff3e8dfe5992ae762d5098e386a796e49f859b7739a45ba98ef",
+    "QiZhangOfficialPrices.sqlite": "f12b611c867bdad6a99da5b27ea657ac582cdd0bcb9979fe14a9744a4e20b688",
+    "QiZhang官方物价.csv": "2d5d033c1171b8ad28eea05eee8caf590c70ec6d298c6c6932c83c797503b501"
+  },
+  "verifier_sha256": "9c0d072bb2d2081e4b31d68e4df537cddcc7d45a7d4498364fad7e9234c4d2ab"
+}

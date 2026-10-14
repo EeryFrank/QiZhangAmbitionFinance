@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "revision": "20261014.f971913cd3d67e274e5e",
+  "scope": "本服26.3、104模组参考价格配置；不是通用MC数据或全量人工审价",
+  "json_resource": {
+    "path": "finance/src/main/resources/data/cozylife_economy/QiZhangOfficialPrices.json",
+    "bytes": 21974231,
+    "sha256": "689bf9ed12a03ff3e8dfe5992ae762d5098e386a796e49f859b7739a45ba98ef"
+  },
+  "files": [
+    {
+      "path": "docs/ADMIN_GUIDE.md",
+      "bytes": 15550,
+      "sha256": "ec64416db1e54b1c0fd1c056607c9995b87c223a5f02243af9ff77c1e28c9bf8"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "bytes": 15110,
+      "sha256": "37023853c7fddcd5766706ddbcd04339247d35e2984fb89afaec82a862c8071f"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "bytes": 4853,
+      "sha256": "978b371aadaaf85f1fb954f02936ecd9964ecbf57df0e21f3f6de68f59d28e35"
+    },
+    {
+      "path": "pricing-profile-cozylife/README.md",
+      "bytes": 6986,
+      "sha256": "c00420929c96cd407256738af0112bf1301a69398ea7a4e63031f40d677562a0"
+    },
+    {
+      "path": "pricing-profile-cozylife/PRICING_POLICY.md",
+      "bytes": 9067,
+      "sha256": "a0b6bf4a41d84f886ae295e3e47313b4867f61361421eb091e11289ddd7f9836"
+    },
+    {
+      "path": "pricing-profile-cozylife/tools/generate_prices.py",
+      "bytes": 48384,
+      "sha256": "a6c70b058be094b3b3a980b625893bdeaee48a069abbd027a7973d542505114c"
+    },
+    {
+      "path": "pricing-profile-cozylife/tools/verify_prices.py",
+      "bytes": 14867,
+      "sha256": "9c0d072bb2d2081e4b31d68e4df537cddcc7d45a7d4498364fad7e9234c4d2ab"
+    },
+    {
+      "path": "pricing-profile-cozylife/QiZhangOfficialPrices.sqlite",
+      "bytes": 37228544,
+      "sha256": "f12b611c867bdad6a99da5b27ea657ac582cdd0bcb9979fe14a9744a4e20b688"
+    },
+    {
+      "path": "pricing-profile-cozylife/QiZhang官方物价.csv",
+      "bytes": 1603303,
+      "sha256": "2d5d033c1171b8ad28eea05eee8caf590c70ec6d298c6c6932c83c797503b501"
+    },
+    {
+      "path": "pricing-profile-cozylife/qa-report.json",
+      "bytes": 5968,
+      "sha256": "a01c9ef0c15e26af7e9e73dce9ef39b72f3ec461a905b479e12cc976f438ff48"
+    },
+    {
+      "path": "pricing-profile-cozylife/missing-names.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "pricing-profile-cozylife/planting-stock.json",
+      "bytes": 15139,
+      "sha256": "1741b7d2829a64e7828f222295ff420d63d88c087077d99960e06d263a0eb6f3"
+    }
+  ],
+  "checks": {
+    "relative_links": true,
+    "python_ast": true,
+    "no_absolute_local_paths_or_server_addresses": true,
+    "no_duplicate_full_json": true,
+    "copied_database_qa_passed": 41,
+    "sqlite_raw_recipes_redistributed": false
+  },
+  "runtime_status": "BOUNDED_LOCAL_CHECKIN_PLANTING_AND_RESTART_PASS_FORMAL_PENDING",
+  "published_to_github": false,
+  "runtime_boundary": "The 82-product/43-planting-stock server regression used current core f5ca with earlier addon d157. Current addon a5 GUI and restart checks are separately recorded; formal startup remains pending.",
+  "runtime_summary": {
+    "path": "verification/portable-build-result.json",
+    "sha256": "e404ae5e80fed138bff17bd4833accb387b88d5a5b8212070cdd87e8b2252a4b",
+    "core_sha256": "f5ca139664603d7ecdacdff2f01ac3e30c41c2d1634868345ca12283a61fb465",
+    "addon_sha256": "a5aa29ef40d0f279a5722cddb5c193b10411c0e9be61161da1c5e29db2049da6"
+  }
+}
